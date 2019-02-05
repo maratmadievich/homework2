@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		84363E7C22097C710095BFB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84363E7B22097C710095BFB2 /* main.m */; };
 		84363E8422098C9F0095BFB2 /* HomeworkOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 84363E8322098C9F0095BFB2 /* HomeworkOne.m */; };
+		84363E892209A32F0095BFB2 /* HomeworkTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84363E882209A32F0095BFB2 /* HomeworkTwo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		84363E7B22097C710095BFB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84363E8222098C9F0095BFB2 /* HomeworkOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeworkOne.h; sourceTree = "<group>"; };
 		84363E8322098C9F0095BFB2 /* HomeworkOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeworkOne.m; sourceTree = "<group>"; };
+		84363E872209A32F0095BFB2 /* HomeworkTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeworkTwo.h; sourceTree = "<group>"; };
+		84363E882209A32F0095BFB2 /* HomeworkTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeworkTwo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				84363E8522098CA70095BFB2 /* HomeworkOne */,
+				84363E8622099D170095BFB2 /* HomeworkTwo */,
 				84363E7B22097C710095BFB2 /* main.m */,
 			);
 			path = HomeWork2.1;
@@ -73,6 +77,15 @@
 				84363E8322098C9F0095BFB2 /* HomeworkOne.m */,
 			);
 			path = HomeworkOne;
+			sourceTree = "<group>";
+		};
+		84363E8622099D170095BFB2 /* HomeworkTwo */ = {
+			isa = PBXGroup;
+			children = (
+				84363E872209A32F0095BFB2 /* HomeworkTwo.h */,
+				84363E882209A32F0095BFB2 /* HomeworkTwo.m */,
+			);
+			path = HomeworkTwo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +146,7 @@
 			files = (
 				84363E8422098C9F0095BFB2 /* HomeworkOne.m in Sources */,
 				84363E7C22097C710095BFB2 /* main.m in Sources */,
+				84363E892209A32F0095BFB2 /* HomeworkTwo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

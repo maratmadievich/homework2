@@ -15,6 +15,7 @@
     do {
         printf("Выберите задание:\n1) Арифметические операции;\n2) Среднее число;\n0) выход.\n\n");
         scanf("%d", &value);
+        printf("\n\n");
         switch (value) {
             case 0:
                 break;
@@ -43,14 +44,14 @@
     
     bool programComplete = false;
     
-    printf("Первое число: ");
-    scanf("%f", &first);
-    printf("Второе число: ");
-    scanf("%f", &second);
-    printf("Действие \"+-/*\": ");
-    
     do {
+        printf("Первое число: ");
+        scanf("%f", &first);
+        printf("Второе число: ");
+        scanf("%f", &second);
+        printf("Действие \"+-/*\": ");
         scanf("%s", operation);
+        printf("\n");
         switch (operation[0]) {
             case '+':
                 result = first + second;
@@ -81,7 +82,7 @@
                 break;
         }
     } while (!programComplete);
-    NSLog(@"%f %c %f = %f \n\n", first, operation[0], second, result);
+    printf("%f %c %f = %f \n\n", first, operation[0], second, result);
 }
 
 
@@ -96,7 +97,7 @@
     scanf("%d", &second);
     printf("Третье число: ");
     scanf("%d", &third);
-    
+    printf("\n");
     
     if (first == second || third == second || first == third) {
         printf("Значения должны быть уникальными\n\n");
