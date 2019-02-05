@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HomeworkOne.h"
+
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        HomeworkOne *homeworkOne= [[HomeworkOne alloc]init];
+        [homeworkOne selectTask];
     }
     return 0;
 }
+
+
+
