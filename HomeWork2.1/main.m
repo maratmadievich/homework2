@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "HomeworkOne.h"
 #import "HomeworkTwo.h"
+#import "HomeworkThree.h"
 
 
 int selectHomework() {
     int value = -1;
     printf("Выберите Домашнее задание:\n");
-    printf("1-2 ДЗ;\n");
+    printf("1-3 ДЗ;\n");
     printf("0 Выход.\n");
     scanf("%d", &value);
     printf("\n\n");
@@ -26,20 +27,26 @@ int selectHomework() {
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         int selectedHomework = -1;
-        HomeworkOne *homeworkOne= [[HomeworkOne alloc]init];
-        HomeworkTwo *homeworkTwo= [[HomeworkTwo alloc]init];
+        
+        HomeworkOne *homeworkOne = [[HomeworkOne alloc]init];
+        HomeworkTwo *homeworkTwo = [[HomeworkTwo alloc]init];
+        HomeworkThree *homeworkThree = [[HomeworkThree alloc]init];
         do {
             selectedHomework = selectHomework();
             switch (selectedHomework) {
                 case 0: //Выход
                     break;
                     
-                case 1: //Выход
+                case 1:
                     [homeworkOne selectTask];
                     break;
                     
-                case 2: //Выход
+                case 2:
                     [homeworkTwo selectTask];
+                    break;
+                    
+                case 3:
+                    [homeworkThree selectTask];
                     break;
                     
                 default:
