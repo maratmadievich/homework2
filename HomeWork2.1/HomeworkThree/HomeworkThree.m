@@ -16,8 +16,20 @@ enum Operation {
     multiplication = '*',
     deletion = '/'
 };
-
 typedef char Operation [1];
+
+typedef NS_ENUM(bool, Gender) {
+    male = true,
+    female = false
+};
+
+struct Human {
+    NSString *name;
+    NSInteger age;
+    Gender gender;
+};
+typedef struct Human Human;
+
 
 -(void)selectTask {
     int value = -1;
@@ -37,6 +49,10 @@ typedef char Operation [1];
                 [self taskTwo];
                 break;
                 
+            case 3:
+                [self taskThree];
+                break;
+                
             default:
                 printf("Выберите другое значение\n");
                 break;
@@ -46,56 +62,73 @@ typedef char Operation [1];
 
 
 -(void) taskOne {
-    
     NSArray *arrayStrings = @[@"Строка 1", @"Строка 2", @"Строка 3", @"Строка 4", @"Строка 5"];
-    
     for (int i = 0; i < arrayStrings.count; i++) {
         printf("%s \n", [arrayStrings[i] UTF8String]);
     }
 }
 
+
 -(void) taskTwo {
     
     float first = 0;
     float second = 0;
-//    Operation operation;
-//
-//    bool programComplete = true;
-//    do {
-//        printf("Первое число: ");
-//        scanf("%f", &first);
-//        printf("Второе число: ");
-//        scanf("%f", &second);
-//        printf("Действие \"+-/*\": ");
-//        scanf("%s", operation);
-//        printf("\n");
-////        switch (operation[0]) {
-////            case addition:
-////                calculateAddition(&first, &second);
-////                programComplete = true;
-////                break;
-////
-////            case subtraction:
-////                calculateSubtraction(&first, &second);
-////                programComplete = true;
-////                break;
-////
-////            case deletion:
-////                calculateDeletion(&first, &second);
-////                programComplete = true;
-////                break;
-////
-////            case multiplication:
-////                calculateMultiplication(&first, &second);
-////                programComplete = true;
-////                break;
-////
-////            default:
-////                programComplete = false;
-////                break;
-////        }
-//    } while (!programComplete);
+    char operation[1];
+
+    bool programComplete = true;
+    do {
+        printf("Первое число: ");
+        scanf("%f", &first);
+        printf("Второе число: ");
+        scanf("%f", &second);
+        printf("Действие \"+-/*\": ");
+        scanf("%s", operation);
+        printf("\n");
+        switch (operation[0]) {
+            case addition:
+                calculateAddition(&first, &second);
+                programComplete = true;
+                break;
+
+            case subtraction:
+                calculateSubtraction(&first, &second);
+                programComplete = true;
+                break;
+
+            case deletion:
+                calculateDeletion(&first, &second);
+                programComplete = true;
+                break;
+
+            case multiplication:
+                calculateMultiplication(&first, &second);
+                programComplete = true;
+                break;
+
+            default:
+                programComplete = false;
+                break;
+        }
+    } while (!programComplete);
 }
+
+
+-(void) taskThree {
+    
+    Human humanAlex;
+    humanAlex.name = @"Alex";
+    humanAlex.age = 20;
+    humanAlex.gender = male;
+    
+    Human humanMerilin;
+    humanMerilin.name = @"Merilin";
+    humanMerilin.age = 18;
+    humanMerilin.gender = female;
+    
+    NSLog(@"Человек: \n Имя - %@ \n Возраст - %ld \n Пол - %@ \n", humanAlex.name, (long)humanAlex.age, humanAlex.gender ? @"Мужской" : @"Женский");
+    NSLog(@"Человек: \n Имя - %@ \n Возраст - %ld \n Пол - %@ \n", humanMerilin.name, (long)humanMerilin.age, humanMerilin.gender ? @"Мужской" : @"Женский");
+}
+
 
 void calculateAddition(float * first, float * second) {
     printf("%f + %f = %f \n\n", *first, *second, *first + *second);

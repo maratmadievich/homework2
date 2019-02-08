@@ -110,7 +110,4 @@ void calculateDeletion(float * first, float * second) {
 }
 
 
-
-
-
 @end
