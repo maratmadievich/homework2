@@ -11,6 +11,8 @@
 		84363E8422098C9F0095BFB2 /* HomeworkOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 84363E8322098C9F0095BFB2 /* HomeworkOne.m */; };
 		84363E892209A32F0095BFB2 /* HomeworkTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84363E882209A32F0095BFB2 /* HomeworkTwo.m */; };
 		843F1118220AD1090090C94D /* HomeworkThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F1117220AD1090090C94D /* HomeworkThree.m */; };
+		847877E722117C430049ACF5 /* HomeworkFour.m in Sources */ = {isa = PBXBuildFile; fileRef = 847877E622117C430049ACF5 /* HomeworkFour.m */; };
+		847877EA22117CD30049ACF5 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 847877E922117CD30049ACF5 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +36,10 @@
 		84363E882209A32F0095BFB2 /* HomeworkTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeworkTwo.m; sourceTree = "<group>"; };
 		843F1116220AD1090090C94D /* HomeworkThree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeworkThree.h; sourceTree = "<group>"; };
 		843F1117220AD1090090C94D /* HomeworkThree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeworkThree.m; sourceTree = "<group>"; };
+		847877E522117C430049ACF5 /* HomeworkFour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeworkFour.h; sourceTree = "<group>"; };
+		847877E622117C430049ACF5 /* HomeworkFour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeworkFour.m; sourceTree = "<group>"; };
+		847877E822117CD30049ACF5 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		847877E922117CD30049ACF5 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 				84363E8522098CA70095BFB2 /* HomeworkOne */,
 				84363E8622099D170095BFB2 /* HomeworkTwo */,
 				843F1115220AD0400090C94D /* HomeworkThree */,
+				847877E322117B2E0049ACF5 /* HomeworkFour */,
 				84363E7B22097C710095BFB2 /* main.m */,
 			);
 			path = HomeWork2.1;
@@ -99,6 +106,25 @@
 				843F1117220AD1090090C94D /* HomeworkThree.m */,
 			);
 			path = HomeworkThree;
+			sourceTree = "<group>";
+		};
+		847877E322117B2E0049ACF5 /* HomeworkFour */ = {
+			isa = PBXGroup;
+			children = (
+				847877E422117BE30049ACF5 /* Student */,
+				847877E522117C430049ACF5 /* HomeworkFour.h */,
+				847877E622117C430049ACF5 /* HomeworkFour.m */,
+			);
+			path = HomeworkFour;
+			sourceTree = "<group>";
+		};
+		847877E422117BE30049ACF5 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				847877E822117CD30049ACF5 /* Student.h */,
+				847877E922117CD30049ACF5 /* Student.m */,
+			);
+			path = Student;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,10 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847877E722117C430049ACF5 /* HomeworkFour.m in Sources */,
 				84363E8422098C9F0095BFB2 /* HomeworkOne.m in Sources */,
 				84363E7C22097C710095BFB2 /* main.m in Sources */,
 				843F1118220AD1090090C94D /* HomeworkThree.m in Sources */,
 				84363E892209A32F0095BFB2 /* HomeworkTwo.m in Sources */,
+				847877EA22117CD30049ACF5 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,24 +10,8 @@
 
 @implementation HomeworkThree
 
-enum Operation {
-    addition = '+',
-    subtraction = '-',
-    multiplication = '*',
-    deletion = '/'
-};
+
 typedef char Operation [1];
-
-typedef NS_ENUM(bool, Gender) {
-    male = true,
-    female = false
-};
-
-struct Human {
-    NSString *name;
-    NSInteger age;
-    Gender gender;
-};
 typedef struct Human Human;
 
 
@@ -130,24 +114,24 @@ typedef struct Human Human;
 }
 
 
-void calculateAddition(float * first, float * second) {
-    printf("%f + %f = %f \n\n", *first, *second, *first + *second);
-}
-
-void calculateSubtraction(float * first, float * second) {
-    printf("%f - %f = %f \n\n", *first, *second, *first - *second);
-}
-
-void calculateMultiplication(float * first, float * second) {
-    printf("%f * %f = %f \n\n", *first, *second, *first * *second);
-}
-
-void calculateDeletion(float * first, float * second) {
-    if (*second != 0) {
-        printf("%f / %f = %f \n\n", *first, *second, *first / *second);
-    } else {
-        printf("На 0 делить нельзя \n\n");
-    }
-}
+//void calculateAddition(float * first, float * second) {
+//    printf("%f + %f = %f \n\n", *first, *second, *first + *second);
+//}
+//
+//void calculateSubtraction(float * first, float * second) {
+//    printf("%f - %f = %f \n\n", *first, *second, *first - *second);
+//}
+//
+//void calculateMultiplication(float * first, float * second) {
+//    printf("%f * %f = %f \n\n", *first, *second, *first * *second);
+//}
+//
+//void calculateDeletion(float * first, float * second) {
+//    if (*second != 0) {
+//        printf("%f / %f = %f \n\n", *first, *second, *first / *second);
+//    } else {
+//        printf("На 0 делить нельзя \n\n");
+//    }
+//}
 
 @end
